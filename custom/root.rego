@@ -2,7 +2,7 @@ package permit.custom
 
 default allow := false
 
-allow {
+deny {
   input.user.key == "root"
   print(policies.__allow_sources)
  }
