@@ -2,6 +2,10 @@ package permit.custom
 
 default allow := false
 
+# allow {
+# 	input.user.key == "root"
+# }
+
 # You can find the official Rego tutorial at:
 # https://www.openpolicyagent.org/docs/latest/policy-language/
 # Example rule - you can replace this with something of your own
