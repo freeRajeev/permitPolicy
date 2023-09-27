@@ -6,7 +6,7 @@ import data.permit.policies
 
 default allow := false
 deny {
-  input.user.key == "BryanAdams"
+  
   print(policies.__allow_sources)
  }
 # You can find the official Rego tutorial at:
