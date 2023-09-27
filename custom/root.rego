@@ -5,10 +5,7 @@ import data.permit.debug
 import data.permit.policies
 
 default allow := false
-deny {
-  
-  print(policies.__allow_sources)
- }
+
 # You can find the official Rego tutorial at:
 # https://www.openpolicyagent.org/docs/latest/policy-language/
 # Example rule - you can replace this with something of your own
