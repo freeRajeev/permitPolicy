@@ -1,7 +1,6 @@
 package permit.custom
 
 default allow := false
-default deny := false
 deny {
   input.user.key == "BryanAdams"
   print(policies.__allow_sources)
