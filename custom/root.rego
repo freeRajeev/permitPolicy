@@ -7,7 +7,7 @@ import data.permit.policies
 default allow := false
 
 deny {
- 	input.user.key == "BryanAdams"
+ 	input.user.key == "user1234"
 }
 
 # You can find the official Rego tutorial at:
