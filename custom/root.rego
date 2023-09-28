@@ -6,6 +6,10 @@ import data.permit.policies
 
 default allow := false
 
+deny {
+ 	input.user.key == "BryanAdams"
+}
+
 # You can find the official Rego tutorial at:
 # https://www.openpolicyagent.org/docs/latest/policy-language/
 # Example rule - you can replace this with something of your own
