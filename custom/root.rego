@@ -15,7 +15,7 @@ deny {
 }
 
 resourceset__5f_5fautogen_5fCourt {
-	attributes.resource.type == "Court"
+	attributes.resource.type == "CourtRoom"
 }
 
 # You can find the official Rego tutorial at:
