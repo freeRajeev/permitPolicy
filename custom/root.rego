@@ -4,10 +4,18 @@ import data.permit.custom
 import data.permit.debug
 import data.permit.policies
 
+import future.keywords.in
+import data.permit.generated.abac.utils.attributes
+default resourceset__5f_5fautogen_5fCourt = false
+
 default allow := false
 
 deny {
  	input.user.key == "user1234"
+}
+
+resourceset__5f_5fautogen_5fCourt {
+	attributes.resource.type == "Court"
 }
 
 # You can find the official Rego tutorial at:
