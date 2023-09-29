@@ -1,5 +1,5 @@
 package permit.custom
-
+import permit.custom
 default allow := false
 
 # You can find the official Rego tutorial at:
