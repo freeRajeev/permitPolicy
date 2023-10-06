@@ -9,7 +9,7 @@ default allow := false
 allow {
 	policies.allow
 	not custom.deny
-	print("ooooo")
+	print("oooooo")
 
 }
 
