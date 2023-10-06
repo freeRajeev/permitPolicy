@@ -9,8 +9,8 @@ default allow := false
 allow {
 	policies.allow
 	not custom.deny
-	print("oooooo")
-asdfadsf
+	print("oooooo"
+
 
 }
 
