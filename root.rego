@@ -6,17 +6,17 @@ import data.permit.policies
 
 default allow := false
 
-print("oooo2")
 allow {
+print("oooo1")
 	policies.allow
 	not custom.deny
-	print("oooo1")
+	
 	}
 
 # NOTE: you can add more conditions here to get an AND effect
 # i.e: assume you added my_custom_rule here
 # The policy will allow if BOTH policies.allow and my_custom_rule are true
-print("oooo3")
+
 allow {
 	custom.allow
 }
@@ -43,6 +43,6 @@ debugger_activated {
 debug = result {
 	debugger_activated
 	result := debug.debug
-print("oooo5")
+
 }
-print("oooo4")
+
