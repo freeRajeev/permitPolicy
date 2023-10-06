@@ -5,7 +5,7 @@ import data.permit.debug
 import data.permit.policies
 
 default allow := false
-
+print(input)
 allow {
 	policies.allow
 	not custom.deny
