@@ -7,7 +7,7 @@ import data.permit.policies
 default allow := false
 
 allow {
-	print("oooo1")
+	print("oooo000")
 	policies.allow
 	not custom.deny
 	
