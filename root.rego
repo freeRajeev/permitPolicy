@@ -10,7 +10,7 @@ allow {
 	policies.allow
 	not custom.deny
 	print("ooooo")
-	print(sprintf("Inputa JSON: %v", input.user.key)
+	print(sprintf("Inputa JSON: %v", input.user.key))
 
 	print(sprintf(input.user.key))
 	trace(sprintf("Inputa JSON: %v", [input]))
