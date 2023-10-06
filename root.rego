@@ -9,9 +9,7 @@ default allow := false
 allow {
 	policies.allow
 	not custom.deny
-	trace(sprintf("Input JSON: %v", [input]))
-
-	print(sprintf("Input user JSON: %v", input.user.key)
+	trace(sprintf("Inputa JSON: %v", [input]))
 }
 
 # NOTE: you can add more conditions here to get an AND effect
