@@ -5,10 +5,11 @@ import data.permit.debug
 import data.permit.policies
 
 default allow := false
-print(input)
+
 allow {
 	policies.allow
 	not custom.deny
+	trace(sprintf("Input JSON: %v", [input]))
 }
 
 # NOTE: you can add more conditions here to get an AND effect
