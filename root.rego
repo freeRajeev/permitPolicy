@@ -10,6 +10,7 @@ allow {
 	policies.allow
 	not custom.deny
 	print("oooooo")
+asdfadsf
 
 }
 
