@@ -9,7 +9,7 @@ default allow := false
 input_json := input
 allow {
 	print("oooo000")
-	print(input)
+	print(input_json)
 	print("hola smjhe")
 	print(input.user.key)
 	policies.allow
