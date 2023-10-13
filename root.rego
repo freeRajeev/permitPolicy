@@ -9,7 +9,7 @@ default allow := false
 allow {
 	print("oooo000")
 	print(input)
-	print(hola smjhe)
+	print("hola smjhe")
 	policies.allow
 	not custom.deny
 	
