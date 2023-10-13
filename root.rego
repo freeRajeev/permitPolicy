@@ -6,11 +6,16 @@ import data.permit.policies
 
 default allow := false
 
+input_json := input
 allow {
+	print("Hello, world!")
+	print(input_json)
+	print(input)
+	print(input.user.key)
 	policies.allow
 	not custom.deny
-	trace(sprintf("Inputa JSON: %v", [input]))
-}
+	
+	}
 
 # NOTE: you can add more conditions here to get an AND effect
 # i.e: assume you added my_custom_rule here
@@ -42,4 +47,6 @@ debugger_activated {
 debug = result {
 	debugger_activated
 	result := debug.debug
+
 }
+
