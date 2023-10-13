@@ -8,6 +8,7 @@ default allow := false
 
 allow {
 	print("oooo000")
+	print(input)
 	policies.allow
 	not custom.deny
 	
