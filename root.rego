@@ -6,6 +6,7 @@ import data.permit.policies
 
 default allow := false
 
+input_json := input
 allow {
 	print("oooo000")
 	print(input)
