@@ -10,6 +10,7 @@ allow {
 	print("oooo000")
 	print(input)
 	print("hola smjhe")
+	print("input.user.key")
 	policies.allow
 	not custom.deny
 	
