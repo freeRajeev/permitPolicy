@@ -21,7 +21,7 @@ decodeJwt {
     userKey= token.payload.userID
     userRole = token.payload.role
 
-    print (userKey)
+    print(userKey)
     print(userRole)
 }
 
