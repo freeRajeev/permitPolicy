@@ -12,7 +12,9 @@ allow {
 	print(input_json)
 	print(input)
 	print(input.user.key)
+	custom.allow
 	policies.allow
+
 	not custom.deny
 	
 	}

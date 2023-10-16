@@ -3,20 +3,23 @@ package permit.custom
 import data.permit.custom
 import data.permit.debug
 import data.permit.policies
+import data.permit.custom.decodeJwt
 
 import future.keywords.in
 import data.permit.generated.abac.utils.attributes
 default resourceset__5f_5fautogen_5fCourt = false
 
 default allow := false
+allow {
+    print("....calling decode JWT")
+    decodeJwt.allow
+}
 
 deny {
  	input.user.key == "user1234"
 }
 
-resourceset__5f_5fautogen_5fCourt {
-	attributes.resource.type == "CourtRoom"
-}
+
 
 # You can find the official Rego tutorial at:
 # https://www.openpolicyagent.org/docs/latest/policy-language/
