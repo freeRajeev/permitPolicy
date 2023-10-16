@@ -7,14 +7,14 @@ import data.permit.custom.JwtDecode as globals
 
 default allow := false
 
-input_json := input
+randomString := "oooo"
 allow {
 	print("Hello, world!")
-	print(input_json)
+
 	print(input)
 	print(input.user.key)
 	custom.JwtDecode
-	print("ooooooooo")
+	print(randomString)
 	print(custom.JwtDecode.userID)
 	print(custom.JwtDecode.role)
 
