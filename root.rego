@@ -12,6 +12,7 @@ allow {
 	print(input_json)
 	print(input)
 	print(input.user.key)
+	custom.decodeJwt
 	custom.allow
 	policies.allow
 

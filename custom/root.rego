@@ -3,20 +3,36 @@ package permit.custom
 import data.permit.custom
 import data.permit.debug
 import data.permit.policies
-import data.permit.custom.decodeJwt
-
 import future.keywords.in
 import data.permit.generated.abac.utils.attributes
-default resourceset__5f_5fautogen_5fCourt = false
+
+parsed_path := split_path(http_request.path)
 
 default allow := false
 allow {
     print("....calling decode JWT")
-    decodeJwt.allow
+
+}
+decodeJwt {
+    print("....from decode jwt rego")
+    print(input)
+        http_request.method == "GET"
+    some i
+    userKey= token.payload.userID
+    userRole = token.payload.role
+
+    print (userKey)
+    print(userRole)
 }
 
-deny {
- 	input.user.key == "user1234"
+token := {"payload": payload} {
+    [_, jwt_token] := split(http_request.headers.authorization, " ")
+    io.jwt.decode(jwt_token, [_, payload, _])
+}
+
+split_path(str) = parts {
+    trimmed := trim(str, "/")
+    parts := split(trimmed, "/")
 }
 
 
