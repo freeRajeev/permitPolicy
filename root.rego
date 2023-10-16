@@ -16,7 +16,8 @@ allow {
 	custom.allow
 	policies.allow
 
-	not custom.deny
+    print("ooooooooo")
+    print(userKey)
 	
 	}
 
