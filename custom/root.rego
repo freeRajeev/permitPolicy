@@ -17,7 +17,6 @@ decodeJwt {
     print("....from decode jwt rego")
     print(input)
         http_request.method == "GET"
-    some i
     userKey := token.payload.userID
     userRole := token.payload.role
 
