@@ -19,6 +19,7 @@ JwtDecode = {"userID": userID, "role": role} {
     io.jwt.decode(jwt_token, [_, payload, _])
     userID := payload.userID
     role := payload.role
+    print("inside jwtDecode method....")
 }
 
 parsed_path := split_path(http_request.path)
