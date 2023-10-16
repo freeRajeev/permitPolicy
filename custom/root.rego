@@ -5,7 +5,7 @@ import data.permit.debug
 import data.permit.policies
 import future.keywords.in
 import data.permit.generated.abac.utils.attributes
-
+import input.attributes.request.http as http_request
 parsed_path := split_path(http_request.path)
 
 default allow := false
