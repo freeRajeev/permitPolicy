@@ -14,6 +14,7 @@ allow {
 	print(input)
 	print(input.user.key)
 	custom.JwtDecode
+	print(custom.JwtDecode.userID)
 	custom.allow
 	policies.allow
 
