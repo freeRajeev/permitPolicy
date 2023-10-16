@@ -3,6 +3,7 @@ package permit.root
 import data.permit.custom
 import data.permit.debug
 import data.permit.policies
+import data.permit.custom.JwtDecode as globals
 
 default allow := false
 
@@ -17,7 +18,7 @@ allow {
 	policies.allow
 
     print("ooooooooo")
-    print(JwtDecode.userID)
+    print(globals.userID)
 	
 	}
 
