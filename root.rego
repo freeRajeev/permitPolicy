@@ -12,12 +12,12 @@ allow {
 	print(input_json)
 	print(input)
 	print(input.user.key)
-	custom.decodeJwt
+	custom.JwtDecode
 	custom.allow
 	policies.allow
 
     print("ooooooooo")
-    print(userKey)
+    print(JwtDecode.userID)
 	
 	}
 

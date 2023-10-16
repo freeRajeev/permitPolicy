@@ -13,27 +13,20 @@ allow {
     print("....calling decode JWT")
 
 }
-decodeJwt {
-    print("....from decode jwt rego")
-    print(input)
-        http_request.method == "GET"
-    userKey := token.payload.userID
-    userRole := token.payload.role
 
-    print(userKey)
-    print(userRole)
-}
-
-token := {"payload": payload} {
+JwtDecode = {"userID": userID, "role": role} {
     [_, jwt_token] := split(http_request.headers.authorization, " ")
     io.jwt.decode(jwt_token, [_, payload, _])
+    userID := payload.userID
+    role := payload.role
 }
+
+parsed_path := split_path(http_request.path)
 
 split_path(str) = parts {
     trimmed := trim(str, "/")
     parts := split(trimmed, "/")
 }
-
 
 
 # You can find the official Rego tutorial at:
