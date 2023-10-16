@@ -18,8 +18,8 @@ decodeJwt {
     print(input)
         http_request.method == "GET"
     some i
-    userKey= token.payload.userID
-    userRole = token.payload.role
+    userKey := token.payload.userID
+    userRole := token.payload.role
 
     print(userKey)
     print(userRole)
