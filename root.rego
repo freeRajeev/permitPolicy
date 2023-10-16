@@ -14,12 +14,13 @@ allow {
 	print(input)
 	print(input.user.key)
 	custom.JwtDecode
+	print("ooooooooo")
 	print(custom.JwtDecode.userID)
+	print(custom.JwtDecode.role)
+
 	custom.allow
 	policies.allow
 
-    print("ooooooooo")
-    print(globals.userID)
 	
 	}
 
