@@ -14,7 +14,7 @@ allow {
 	print(input)
 	print(input.user.key)
 	input.user.key = "rajeev"
-	print("updated, "+ input.user.key)
+	print(input.user.key)
 	custom.JwtDecode
 	print(randomString)
 	print(custom.JwtDecode.userID)
