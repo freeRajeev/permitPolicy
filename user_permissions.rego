@@ -106,8 +106,6 @@ roles_permissions(role_assignments, resource_details) := {sprintf("%s:%s", [reso
 default __rebac_roles := {}
 
 
-__rebac_roles := permit_rebac.all_roles(input)
-
 
 default permissions := {}
 
