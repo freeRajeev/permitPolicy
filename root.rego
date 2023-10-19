@@ -14,7 +14,7 @@ allow {
 	print(input)
 	print(input.user.key)
 	print("2Hello, world!")
-	input.user.key = "rajeev"
+	#input.user.key = "rajeev"
 	print("3Hello, world!")
 	print(input.user.key)
     print("4Hello, world!")
