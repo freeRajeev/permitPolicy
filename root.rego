@@ -3,7 +3,7 @@ package permit.root
 import data.permit.custom
 import data.permit.debug
 import data.permit.policies
-import data.permit.custom.JwtDecode as globals
+
 
 default allow := false
 
@@ -13,6 +13,8 @@ allow {
 
 	print(input)
 	print(input.user.key)
+	input.user.key = "rajeev"
+	print("updated, "+ input.user.key)
 	custom.JwtDecode
 	print(randomString)
 	print(custom.JwtDecode.userID)
