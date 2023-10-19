@@ -9,12 +9,15 @@ default allow := false
 
 randomString := "oooo"
 allow {
-	print("Hello, world!")
 
+    print("1Hello, world!")
 	print(input)
 	print(input.user.key)
+	print("2Hello, world!")
 	input.user.key = "rajeev"
+	print("3Hello, world!")
 	print(input.user.key)
+    print("4Hello, world!")
 	custom.JwtDecode
 	print(randomString)
 	print(custom.JwtDecode.userID)
